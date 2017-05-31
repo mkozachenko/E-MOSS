@@ -1,0 +1,190 @@
+05-14 16:54:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "ACTIVITY" уже существует
+Table "ACTIVITY" already exists; SQL statement:
+CREATE TABLE ACTIVITY (ID INTEGER, STARTTIME datetime, ENDTIME datetime,  ACTIVITY_NAME VARCHAR(200),  PRIMARY KEY (ID)) [42101-178]
+05-14 16:54:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Недопустимое значение "2" для параметра "parameterIndex"
+Invalid value "2" for parameter "parameterIndex" [90008-178]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:227)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1383)
+	at org.h2.jdbc.JdbcPreparedStatement.setTimestamp(JdbcPreparedStatement.java:437)
+	at Test.main(Test.java:37)
+05-14 16:55:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "GRT8" не найден
+Column "GRT8" not found; SQL statement:
+INSERT INTO ACTIVITY (ID, STARTTIME, ENDTIME, ACTIVITY_NAME) VALUES (?,2,3,grt8) [42122-178]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:148)
+	at org.h2.command.dml.Insert.prepare(Insert.java:271)
+	at org.h2.command.Parser.prepareCommand(Parser.java:248)
+	at org.h2.engine.Session.prepareLocal(Session.java:442)
+	at org.h2.engine.Session.prepareCommand(Session.java:384)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:73)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:276)
+	at Test.main(Test.java:32)
+05-14 16:55:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "ACTIVITY2" уже существует
+Table "ACTIVITY2" already exists; SQL statement:
+CREATE TABLE ACTIVITY2 (ID INTEGER, STARTTIME INTEGER, ENDTIME INTEGER,  ACTIVITY_NAME VARCHAR(200),  PRIMARY KEY (ID)) [42101-178]
+05-14 16:55:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Недопустимое значение "3" для параметра "parameterIndex"
+Invalid value "3" for parameter "parameterIndex" [90008-178]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:227)
+	at org.h2.jdbc.JdbcPreparedStatement.setParameter(JdbcPreparedStatement.java:1383)
+	at org.h2.jdbc.JdbcPreparedStatement.setTimestamp(JdbcPreparedStatement.java:437)
+	at Test.main(Test.java:38)
+05-14 19:41:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "LOAD[*] DATA INFILE 'D:/my_planets.csv' INTO TABLE PLANETS "
+Syntax error in SQL statement "LOAD[*] DATA INFILE 'D:/my_planets.csv' INTO TABLE PLANETS "; SQL statement:
+LOAD DATA INFILE 'D:/my_planets.csv' INTO TABLE planets [42000-178]
+05-14 19:45:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "LOAD[*] DATA INFILE 'D:/my_planets.csv' INTO TABLE PLANETS FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "
+Syntax error in SQL statement "LOAD[*] DATA INFILE 'D:/my_planets.csv' INTO TABLE PLANETS FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "; SQL statement:
+LOAD DATA INFILE 'D:/my_planets.csv' INTO TABLE planets FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; [42000-178]
+05-14 19:54:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "CREATE TABLE PLANETS1 (ID SMALLINT(6), NAME VARCHAR()[*]35, TEXTURE VARCHAR(45), RADIUS FLOAT, DISTANCE FLOAT, ORB-SPEED FLOAT, ROT-SPEED FLOAT, TILT FLOAT, PRIMARY KEY(ID))"; ожидалось "long"
+Syntax error in SQL statement "CREATE TABLE PLANETS1 (ID SMALLINT(6), NAME VARCHAR()[*]35, TEXTURE VARCHAR(45), RADIUS FLOAT, DISTANCE FLOAT, ORB-SPEED FLOAT, ROT-SPEED FLOAT, TILT FLOAT, PRIMARY KEY(ID))"; expected "long"; SQL statement:
+CREATE TABLE PLANETS1 (ID SMALLINT(6), NAME VARCHAR()35, TEXTURE VARCHAR(45), RADIUS FLOAT, DISTANCE FLOAT, ORB-SPEED FLOAT, ROT-SPEED FLOAT, TILT FLOAT, PRIMARY KEY(ID)) [42001-178]
+05-14 19:55:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Неизвестный тип данных: "-"
+Unknown data type: "-"; SQL statement:
+CREATE TABLE PLANETS1 (ID SMALLINT(6), NAME VARCHAR(35), TEXTURE VARCHAR(45), RADIUS FLOAT, DISTANCE FLOAT, ORB-SPEED FLOAT, ROT-SPEED FLOAT, TILT FLOAT, PRIMARY KEY(ID)) [50004-178]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:3963)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:3826)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5723)
+	at org.h2.command.Parser.parseCreate(Parser.java:4122)
+	at org.h2.command.Parser.parsePrepared(Parser.java:351)
+	at org.h2.command.Parser.parse(Parser.java:306)
+	at org.h2.command.Parser.parse(Parser.java:278)
+	at org.h2.command.Parser.prepareCommand(Parser.java:243)
+	at org.h2.engine.Session.prepareLocal(Session.java:442)
+	at org.h2.engine.Session.prepareCommand(Session.java:384)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:75)
+	at updateDB.main(updateDB.java:20)
+05-14 19:56:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Неизвестный тип данных: "-"
+Unknown data type: "-"; SQL statement:
+CREATE TABLE PLANETS1 (ID SMALLINT(6), NAME VARCHAR(35), TEXTURE VARCHAR(45), RADIUS FLOAT, DISTANCE FLOAT, ORB-SPEED FLOAT, ROT-SPEED FLOAT, TILT FLOAT, PRIMARY KEY(ID)) [50004-178]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:3963)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:3826)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5723)
+	at org.h2.command.Parser.parseCreate(Parser.java:4122)
+	at org.h2.command.Parser.parsePrepared(Parser.java:351)
+	at org.h2.command.Parser.parse(Parser.java:306)
+	at org.h2.command.Parser.parse(Parser.java:278)
+	at org.h2.command.Parser.prepareCommand(Parser.java:243)
+	at org.h2.engine.Session.prepareLocal(Session.java:442)
+	at org.h2.engine.Session.prepareCommand(Session.java:384)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:75)
+	at updateDB.main(updateDB.java:20)
+05-14 19:58:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Неизвестный тип данных: "-"
+Unknown data type: "-"; SQL statement:
+CREATE TABLE PLANETS1 (ID INT AUTO_INCREMENT, NAME VARCHAR(35), TEXTURE VARCHAR(45), RADIUS FLOAT, DISTANCE FLOAT, ORB-SPEED FLOAT, ROT-SPEED FLOAT, TILT FLOAT, PRIMARY KEY(ID)) [50004-178]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:3963)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:3826)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5723)
+	at org.h2.command.Parser.parseCreate(Parser.java:4122)
+	at org.h2.command.Parser.parsePrepared(Parser.java:351)
+	at org.h2.command.Parser.parse(Parser.java:306)
+	at org.h2.command.Parser.parse(Parser.java:278)
+	at org.h2.command.Parser.prepareCommand(Parser.java:243)
+	at org.h2.engine.Session.prepareLocal(Session.java:442)
+	at org.h2.engine.Session.prepareCommand(Session.java:384)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:75)
+	at updateDB.main(updateDB.java:20)
+05-14 19:58:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Метод разрешен только для запросов. Используйте execute или executeUpdate вместо executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+CREATE TABLE PLANETS1 (ID INT AUTO_INCREMENT, NAME VARCHAR(35), TEXTURE VARCHAR(45), RADIUS FLOAT, DISTANCE FLOAT, ORB_SPEED FLOAT, ROT_SPEED FLOAT, TILT FLOAT, PRIMARY KEY(ID)) [90002-178]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.message.DbException.get(DbException.java:143)
+	at org.h2.command.Prepared.query(Prepared.java:213)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:91)
+	at org.h2.command.Command.executeQuery(Command.java:197)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:81)
+	at updateDB.main(updateDB.java:20)
+05-14 20:00:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "LOAD[*] DATA INFILE 'D:/my_planets.csv' INTO TABLE PLANETS1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "
+Syntax error in SQL statement "LOAD[*] DATA INFILE 'D:/my_planets.csv' INTO TABLE PLANETS1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "; SQL statement:
+LOAD DATA INFILE 'D:/my_planets.csv' INTO TABLE planets1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; [42000-178]
+05-14 20:01:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "TABLE" не найдена
+Table "TABLE" not found; SQL statement:
+SELECT * FROM TABLE PLANETS1 [42102-178]
+05-14 20:04:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "LOAD[*] DATA INFILE 'D:/my_planets.csv' INTO TABLE PLANETS1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "
+Syntax error in SQL statement "LOAD[*] DATA INFILE 'D:/my_planets.csv' INTO TABLE PLANETS1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "; SQL statement:
+LOAD DATA INFILE 'D:/my_planets.csv' INTO TABLE planets1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; [42000-178]
+05-14 20:04:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "LOAD[*] DATA INFILE 'D:/my_planets.csv' INTO TABLE PLANETS1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "
+Syntax error in SQL statement "LOAD[*] DATA INFILE 'D:/my_planets.csv' INTO TABLE PLANETS1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "; SQL statement:
+load DATA INFILE 'D:/my_planets.csv' INTO TABLE planets1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; [42000-178]
+05-14 20:06:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "LOAD[*] DATA LOCAL INFILE 'D:/my_planets.csv' INTO TABLE PLANETS1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "
+Syntax error in SQL statement "LOAD[*] DATA LOCAL INFILE 'D:/my_planets.csv' INTO TABLE PLANETS1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "; SQL statement:
+LOAD DATA LOCAL INFILE 'D:/my_planets.csv' INTO TABLE planets1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; [42000-178]
+05-14 20:08:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "LOAD[*] DATA LOCAL INFILE 'D:/Projects/Eclipse/SOL/data/my_planets.csv' INTO TABLE PLANETS1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "
+Syntax error in SQL statement "LOAD[*] DATA LOCAL INFILE 'D:/Projects/Eclipse/SOL/data/my_planets.csv' INTO TABLE PLANETS1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "; SQL statement:
+LOAD DATA LOCAL INFILE 'D:/Projects/Eclipse/SOL/data/my_planets.csv' INTO TABLE planets1 FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; [42000-178]
+05-14 20:09:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "LOAD[*] DATA INFILE 'D:/Projects/Eclipse/SOL/data/my_planets.csv' INTO TABLE PLANETS1 REPLACE FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "
+Syntax error in SQL statement "LOAD[*] DATA INFILE 'D:/Projects/Eclipse/SOL/data/my_planets.csv' INTO TABLE PLANETS1 REPLACE FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "; SQL statement:
+LOAD DATA INFILE 'D:/Projects/Eclipse/SOL/data/my_planets.csv' INTO TABLE planets1 Replace FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; [42000-178]
+05-14 20:09:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "LOAD[*] DATA INFILE 'D:/Projects/Eclipse/SOL/data/my_planets.csv' INTO TABLE PLANETS1 REPLACE FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "
+Syntax error in SQL statement "LOAD[*] DATA INFILE 'D:/Projects/Eclipse/SOL/data/my_planets.csv' INTO TABLE PLANETS1 REPLACE FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; "; SQL statement:
+LOAD DATA INFILE 'D:/Projects/Eclipse/SOL/data/my_planets.csv' INTO TABLE planets1 Replace FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+'; [42000-178]
+05-14 20:10:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "LOAD[*] DATA INFILE 'D:/Projects/Eclipse/SOL/data/my_planets.csv' INTO TABLE PLANETS1 REPLACE FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+' "
+Syntax error in SQL statement "LOAD[*] DATA INFILE 'D:/Projects/Eclipse/SOL/data/my_planets.csv' INTO TABLE PLANETS1 REPLACE FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+' "; SQL statement:
+LOAD DATA INFILE 'D:/Projects/Eclipse/SOL/data/my_planets.csv' INTO TABLE planets1 Replace FIELDS TERMINATED BY ',' LINES TERMINATED BY '
+' [42000-178]

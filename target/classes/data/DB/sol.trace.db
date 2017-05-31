@@ -1,0 +1,1239 @@
+09-07 12:31:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "INFO" не найдена
+Table "INFO" not found; SQL statement:
+SELECT * FROM info [42102-181]
+09-07 12:31:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "MOONS" не найдена
+Table "MOONS" not found; SQL statement:
+SELECT * FROM MOONS [42102-181]
+09-07 12:31:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM PLANETS [42102-181]
+09-07 13:18:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "INFO" не найдена
+Table "INFO" not found; SQL statement:
+SELECT * FROM info [42102-181]
+09-07 13:18:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "MOONS" не найдена
+Table "MOONS" not found; SQL statement:
+SELECT * FROM MOONS [42102-181]
+09-07 13:18:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM PLANETS [42102-181]
+09-07 13:21:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "INFO" не найдена
+Table "INFO" not found; SQL statement:
+SELECT * FROM info [42102-181]
+09-07 13:21:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "MOONS" не найдена
+Table "MOONS" not found; SQL statement:
+SELECT * FROM MOONS [42102-181]
+09-07 13:21:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM PLANETS [42102-181]
+09-07 13:22:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "MOONS" не найдена
+Table "MOONS" not found; SQL statement:
+SELECT * FROM MOONS [42102-181]
+09-07 13:24:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM planets [42102-181]
+09-07 13:28:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM planets [42102-181]
+09-07 13:29:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM planets [42102-181]
+09-07 13:30:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM planets [42102-181]
+09-07 14:01:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM planets [42102-181]
+09-08 12:26:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM planets [42102-181]
+09-08 12:53:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM planets [42102-181]
+09-08 12:54:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM planets [42102-181]
+09-08 12:57:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM planets [42102-181]
+09-08 12:57:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "PLANETS" не найдена
+Table "PLANETS" not found; SQL statement:
+SELECT * FROM planets [42102-181]
+09-08 13:03:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Ошибка преобразования данных при конвертации "'GEDC0186.JPG' (PLANETS: TILT FLOAT)"
+Data conversion error converting "'GEDC0186.JPG' (PLANETS: TILT FLOAT)"; SQL statement:
+ -- row #2 ('2', 'SOL1', '100', '33', '10', '7', '13', 'GEDC0186.JPG', '2014-09-07 06:00:00') [22018-181]
+09-08 13:29:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Ошибка ввода/вывода: "IOException reading D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:29:43 MSK 2014.csv"
+IO Exception: "IOException reading D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:29:43 MSK 2014.csv"; SQL statement:
+CREATE TABLE PLANETS (ID INT AUTO_INCREMENT, NAME VARCHAR(35), RADIUS FLOAT, DISTANCE FLOAT, ORB_SPEED FLOAT, ROT_SPEED FLOAT, TILT FLOAT, TEXTURE VARCHAR(45), UPDATED TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY(ID)) AS SELECT * FROM CSVREAD('D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:29:43 MSK 2014.csv') [90028-181]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.tools.Csv.convertException(Csv.java:602)
+	at org.h2.tools.Csv.read(Csv.java:198)
+	at org.h2.expression.Function.getValueForColumnList(Function.java:2542)
+	at org.h2.table.FunctionTable.<init>(FunctionTable.java:66)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1213)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1860)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1969)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1854)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1675)
+	at org.h2.command.Parser.parseSelect(Parser.java:1663)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5880)
+	at org.h2.command.Parser.parseCreate(Parser.java:4126)
+	at org.h2.command.Parser.parsePrepared(Parser.java:350)
+	at org.h2.command.Parser.parse(Parser.java:305)
+	at org.h2.command.Parser.parse(Parser.java:277)
+	at org.h2.command.Parser.prepareCommand(Parser.java:242)
+	at org.h2.engine.Session.prepareLocal(Session.java:446)
+	at org.h2.engine.Session.prepareCommand(Session.java:388)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1189)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:171)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:159)
+	at project.sol.updateDB.<init>(updateDB.java:108)
+	at project.sol.updateDB.main(updateDB.java:17)
+Caused by: java.io.FileNotFoundException: D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:29:43 MSK 2014.csv (Синтаксическая ошибка в имени файла, имени папки или метке тома)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.h2.store.fs.FilePathDisk.newInputStream(FilePathDisk.java:321)
+	at org.h2.store.fs.FileUtils.newInputStream(FileUtils.java:218)
+	at org.h2.tools.Csv.initRead(Csv.java:320)
+	at org.h2.tools.Csv.readResultSet(Csv.java:220)
+	at org.h2.tools.Csv.read(Csv.java:196)
+	... 21 more
+09-08 13:36:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Ошибка ввода/вывода: "IOException reading D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:35:52 MSK 2014.csv"
+IO Exception: "IOException reading D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:35:52 MSK 2014.csv"; SQL statement:
+CREATE TABLE PLANETS (ID INT AUTO_INCREMENT, NAME VARCHAR(35), RADIUS FLOAT, DISTANCE FLOAT, ORB_SPEED FLOAT, ROT_SPEED FLOAT, TILT FLOAT, TEXTURE VARCHAR(45), UPDATED TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY(ID)) AS SELECT * FROM CSVREAD('D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:35:52 MSK 2014.csv') [90028-181]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.tools.Csv.convertException(Csv.java:602)
+	at org.h2.tools.Csv.read(Csv.java:198)
+	at org.h2.expression.Function.getValueForColumnList(Function.java:2542)
+	at org.h2.table.FunctionTable.<init>(FunctionTable.java:66)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1213)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1860)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1969)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1854)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1675)
+	at org.h2.command.Parser.parseSelect(Parser.java:1663)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5880)
+	at org.h2.command.Parser.parseCreate(Parser.java:4126)
+	at org.h2.command.Parser.parsePrepared(Parser.java:350)
+	at org.h2.command.Parser.parse(Parser.java:305)
+	at org.h2.command.Parser.parse(Parser.java:277)
+	at org.h2.command.Parser.prepareCommand(Parser.java:242)
+	at org.h2.engine.Session.prepareLocal(Session.java:446)
+	at org.h2.engine.Session.prepareCommand(Session.java:388)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1189)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:171)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:159)
+	at project.sol.updateDB.<init>(updateDB.java:113)
+	at project.sol.updateDB.main(updateDB.java:17)
+Caused by: java.io.FileNotFoundException: D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:35:52 MSK 2014.csv (Синтаксическая ошибка в имени файла, имени папки или метке тома)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.h2.store.fs.FilePathDisk.newInputStream(FilePathDisk.java:321)
+	at org.h2.store.fs.FileUtils.newInputStream(FileUtils.java:218)
+	at org.h2.tools.Csv.initRead(Csv.java:320)
+	at org.h2.tools.Csv.readResultSet(Csv.java:220)
+	at org.h2.tools.Csv.read(Csv.java:196)
+	... 21 more
+09-08 13:39:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Ошибка ввода/вывода: "IOException reading D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:39:43 MSK 2014.csv"
+IO Exception: "IOException reading D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:39:43 MSK 2014.csv"; SQL statement:
+CREATE TABLE PLANETS (ID INT AUTO_INCREMENT, NAME VARCHAR(35), RADIUS FLOAT, DISTANCE FLOAT, ORB_SPEED FLOAT, ROT_SPEED FLOAT, TILT FLOAT, TEXTURE VARCHAR(45), UPDATED TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY(ID)) AS SELECT * FROM CSVREAD('D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:39:43 MSK 2014.csv') [90028-181]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.tools.Csv.convertException(Csv.java:602)
+	at org.h2.tools.Csv.read(Csv.java:198)
+	at org.h2.expression.Function.getValueForColumnList(Function.java:2542)
+	at org.h2.table.FunctionTable.<init>(FunctionTable.java:66)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1213)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1860)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1969)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1854)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1675)
+	at org.h2.command.Parser.parseSelect(Parser.java:1663)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5880)
+	at org.h2.command.Parser.parseCreate(Parser.java:4126)
+	at org.h2.command.Parser.parsePrepared(Parser.java:350)
+	at org.h2.command.Parser.parse(Parser.java:305)
+	at org.h2.command.Parser.parse(Parser.java:277)
+	at org.h2.command.Parser.prepareCommand(Parser.java:242)
+	at org.h2.engine.Session.prepareLocal(Session.java:446)
+	at org.h2.engine.Session.prepareCommand(Session.java:388)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1189)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:171)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:159)
+	at project.sol.updateDB.<init>(updateDB.java:113)
+	at project.sol.updateDB.main(updateDB.java:17)
+Caused by: java.io.FileNotFoundException: D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:39:43 MSK 2014.csv (Синтаксическая ошибка в имени файла, имени папки или метке тома)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.h2.store.fs.FilePathDisk.newInputStream(FilePathDisk.java:321)
+	at org.h2.store.fs.FileUtils.newInputStream(FileUtils.java:218)
+	at org.h2.tools.Csv.initRead(Csv.java:320)
+	at org.h2.tools.Csv.readResultSet(Csv.java:220)
+	at org.h2.tools.Csv.read(Csv.java:196)
+	... 21 more
+09-08 13:42:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Ошибка ввода/вывода: "IOException reading D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:42:47 MSK 2014.csv"
+IO Exception: "IOException reading D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:42:47 MSK 2014.csv"; SQL statement:
+CREATE TABLE PLANETS (ID INT AUTO_INCREMENT, NAME VARCHAR(35), RADIUS FLOAT, DISTANCE FLOAT, ORB_SPEED FLOAT, ROT_SPEED FLOAT, TILT FLOAT, TEXTURE VARCHAR(45), UPDATED TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY(ID)) AS SELECT * FROM CSVREAD('D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:42:47 MSK 2014.csv') [90028-181]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.tools.Csv.convertException(Csv.java:602)
+	at org.h2.tools.Csv.read(Csv.java:198)
+	at org.h2.expression.Function.getValueForColumnList(Function.java:2542)
+	at org.h2.table.FunctionTable.<init>(FunctionTable.java:66)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1213)
+	at org.h2.command.Parser.parseSelectSimpleFromPart(Parser.java:1860)
+	at org.h2.command.Parser.parseSelectSimple(Parser.java:1969)
+	at org.h2.command.Parser.parseSelectSub(Parser.java:1854)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:1675)
+	at org.h2.command.Parser.parseSelect(Parser.java:1663)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5880)
+	at org.h2.command.Parser.parseCreate(Parser.java:4126)
+	at org.h2.command.Parser.parsePrepared(Parser.java:350)
+	at org.h2.command.Parser.parse(Parser.java:305)
+	at org.h2.command.Parser.parse(Parser.java:277)
+	at org.h2.command.Parser.prepareCommand(Parser.java:242)
+	at org.h2.engine.Session.prepareLocal(Session.java:446)
+	at org.h2.engine.Session.prepareCommand(Session.java:388)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1189)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:171)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:159)
+	at project.sol.updateDB.<init>(updateDB.java:115)
+	at project.sol.updateDB.main(updateDB.java:19)
+Caused by: java.io.FileNotFoundException: D:\Projects\Eclipse\SOL\data\planets_table_DBUpdate_Mon Sep 08 13:42:47 MSK 2014.csv (Синтаксическая ошибка в имени файла, имени папки или метке тома)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.h2.store.fs.FilePathDisk.newInputStream(FilePathDisk.java:321)
+	at org.h2.store.fs.FileUtils.newInputStream(FileUtils.java:218)
+	at org.h2.tools.Csv.initRead(Csv.java:320)
+	at org.h2.tools.Csv.readResultSet(Csv.java:220)
+	at org.h2.tools.Csv.read(Csv.java:196)
+	... 21 more
+2016-06-28 12:44:31 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "SELECT * INTO[*] BUILDER_DB FROM PLANETS "
+Syntax error in SQL statement "SELECT * INTO[*] BUILDER_DB FROM PLANETS "; SQL statement:
+SELECT * into Builder_DB FROM PLANETS [42000-192]
+2016-06-28 12:45:00 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "SELECT * 
+INTO[*] BUILDER_DB
+FROM PLANETS "
+Syntax error in SQL statement "SELECT * 
+INTO[*] BUILDER_DB
+FROM PLANETS "; SQL statement:
+SELECT * 
+into Builder_DB
+FROM PLANETS [42000-192]
+2016-06-28 12:45:26 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "SELECT * 
+INTO[*] BUILDER_DB
+FROM PLANETS "
+Syntax error in SQL statement "SELECT * 
+INTO[*] BUILDER_DB
+FROM PLANETS "; SQL statement:
+SELECT * 
+into Builder_DB
+FROM PLANETS [42000-192]
+2016-06-28 12:46:09 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "BUILDER_DB" уже существует
+Table "BUILDER_DB" already exists; SQL statement:
+Create table Builder_DB [42101-192]
+2016-06-28 12:46:09 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "SELECT * 
+FROM PLANETS INTO BUILDER_DB[*] "
+Syntax error in SQL statement "SELECT * 
+FROM PLANETS INTO BUILDER_DB[*] "; SQL statement:
+SELECT * 
+FROM PLANETS into Builder_DB [42000-192]
+2016-06-28 13:17:00 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at builder.DBupdate.<init>(DBupdate.java:21)
+	at builder.BuilderFrame$3.actionPerformed(BuilderFrame.java:137)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 61 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 56 more
+2016-06-28 13:22:42 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at builder.DBupdate.<init>(DBupdate.java:21)
+	at builder.BuilderFrame$3.actionPerformed(BuilderFrame.java:137)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 61 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 56 more
+2016-06-28 13:23:57 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at project.sol.collectData.<init>(collectData.java:159)
+	at project.sol.StartWindow2$1.doInBackground(StartWindow2.java:103)
+	at project.sol.StartWindow2$1.doInBackground(StartWindow2.java:1)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 32 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 27 more
+2016-06-28 13:23:57 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at project.sol.collectData.<init>(collectData.java:94)
+	at project.sol.StartWindow2$1.doInBackground(StartWindow2.java:106)
+	at project.sol.StartWindow2$1.doInBackground(StartWindow2.java:1)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 32 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 27 more
+2016-06-28 13:23:57 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at project.sol.collectData.<init>(collectData.java:34)
+	at project.sol.StartWindow2$1.doInBackground(StartWindow2.java:109)
+	at project.sol.StartWindow2$1.doInBackground(StartWindow2.java:1)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 32 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 27 more
+2016-06-28 13:24:41 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at builder.DBupdate.<init>(DBupdate.java:21)
+	at builder.BuilderFrame$3.actionPerformed(BuilderFrame.java:137)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 61 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 56 more
+2016-06-28 13:26:07 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at sol_base.collectData.<init>(collectData.java:159)
+	at sol_base.StartWindow$1.doInBackground(StartWindow.java:101)
+	at sol_base.StartWindow$1.doInBackground(StartWindow.java:1)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 32 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 27 more
+2016-06-28 13:26:07 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at sol_base.collectData.<init>(collectData.java:94)
+	at sol_base.StartWindow$1.doInBackground(StartWindow.java:104)
+	at sol_base.StartWindow$1.doInBackground(StartWindow.java:1)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 32 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 27 more
+2016-06-28 13:26:07 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at sol_base.collectData.<init>(collectData.java:34)
+	at sol_base.StartWindow$1.doInBackground(StartWindow.java:107)
+	at sol_base.StartWindow$1.doInBackground(StartWindow.java:1)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 32 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 27 more
+2016-06-28 13:27:33 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at sol_base.collectData.<init>(collectData.java:159)
+	at sol_base.StartWindow$1.doInBackground(StartWindow.java:101)
+	at sol_base.StartWindow$1.doInBackground(StartWindow.java:1)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 32 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 27 more
+2016-06-28 13:27:33 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at sol_base.collectData.<init>(collectData.java:94)
+	at sol_base.StartWindow$1.doInBackground(StartWindow.java:104)
+	at sol_base.StartWindow$1.doInBackground(StartWindow.java:1)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 32 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 27 more
+2016-06-28 13:27:33 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at sol_base.collectData.<init>(collectData.java:34)
+	at sol_base.StartWindow$1.doInBackground(StartWindow.java:107)
+	at sol_base.StartWindow$1.doInBackground(StartWindow.java:1)
+	at javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at javax.swing.SwingWorker.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 32 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 27 more
+2016-06-28 13:27:48 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:295)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:94)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:375)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:358)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2893)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:154)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:99)
+	at org.h2.engine.Database.getPageStore(Database.java:2463)
+	at org.h2.engine.Database.open(Database.java:692)
+	at org.h2.engine.Database.openDatabase(Database.java:270)
+	at org.h2.engine.Database.<init>(Database.java:264)
+	at org.h2.engine.Engine.openSession(Engine.java:64)
+	at org.h2.engine.Engine.openSession(Engine.java:176)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:154)
+	at org.h2.engine.Engine.createSession(Engine.java:137)
+	at org.h2.engine.Engine.createSession(Engine.java:27)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:349)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:102)
+	at org.h2.Driver.connect(Driver.java:72)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at builder.DBupdate.<init>(DBupdate.java:21)
+	at builder.BuilderFrame$3.actionPerformed(BuilderFrame.java:137)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLException: Внутренняя ошибка: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]" [50000-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 61 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:D:/Projects/Eclipse/SOL/data/DB/sol.mv.db [1.4.192/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:773)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:344)
+	... 56 more
+06-28 13:35:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "ORBSPEED" не найден
+Column "ORBSPEED" not found; SQL statement:
+INSERT INTO builder_db (`name`,`radius`, `distance`, `orbspeed`, `rotspeed`, `tilt`,`parent`, `texture`) VALUES ('enter here','123','dist','orb','rot','speed','sol','DfL8omtdFik.jpg') [42122-181]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:636)
+	at org.h2.command.Parser.parseColumn(Parser.java:850)
+	at org.h2.command.Parser.parseColumnList(Parser.java:834)
+	at org.h2.command.Parser.parseInsert(Parser.java:1034)
+	at org.h2.command.Parser.parsePrepared(Parser.java:401)
+	at org.h2.command.Parser.parse(Parser.java:305)
+	at org.h2.command.Parser.parse(Parser.java:277)
+	at org.h2.command.Parser.prepareCommand(Parser.java:242)
+	at org.h2.engine.Session.prepareLocal(Session.java:446)
+	at org.h2.engine.Session.prepareCommand(Session.java:388)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1189)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:74)
+	at builder.DBupdate.<init>(DBupdate.java:24)
+	at builder.BuilderFrame$3.actionPerformed(BuilderFrame.java:137)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+06-28 13:37:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "PARENT" не найден
+Column "PARENT" not found; SQL statement:
+INSERT INTO builder_db (`name`,`radius`, `distance`, `orb_speed`, `rot_speed`, `tilt`, `parent`, `texture`) VALUES ('enter here','120','dist','orb','rot','speed','sol','DfL8omtdFik.jpg') [42122-181]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:636)
+	at org.h2.command.Parser.parseColumn(Parser.java:850)
+	at org.h2.command.Parser.parseColumnList(Parser.java:834)
+	at org.h2.command.Parser.parseInsert(Parser.java:1034)
+	at org.h2.command.Parser.parsePrepared(Parser.java:401)
+	at org.h2.command.Parser.parse(Parser.java:305)
+	at org.h2.command.Parser.parse(Parser.java:277)
+	at org.h2.command.Parser.prepareCommand(Parser.java:242)
+	at org.h2.engine.Session.prepareLocal(Session.java:446)
+	at org.h2.engine.Session.prepareCommand(Session.java:388)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1189)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:74)
+	at builder.DBupdate.<init>(DBupdate.java:24)
+	at builder.BuilderFrame$3.actionPerformed(BuilderFrame.java:137)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+06-28 13:40:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Метод разрешен только для запросов. Используйте execute или executeUpdate вместо executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+INSERT INTO builder_db (`name`,`radius`, `distance`, `orb_speed`, `rot_speed`, `tilt`, `texture`) VALUES ('enter here','123','dist','orb','rot','speed','DfL8omtdFik.jpg') [90002-181]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.Prepared.query(Prepared.java:212)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:90)
+	at org.h2.command.Command.executeQuery(Command.java:197)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:80)
+	at builder.DBupdate.<init>(DBupdate.java:24)
+	at builder.BuilderFrame$3.actionPerformed(BuilderFrame.java:137)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+06-28 13:42:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Метод разрешен только для запросов. Используйте execute или executeUpdate вместо executeQuery
+Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+INSERT INTO builder_db (`name`,`radius`, `distance`, `orb_speed`, `rot_speed`, `tilt`, `texture`) VALUES ('enter here','789','dist','orb','rot','speed','DfL8omtdFik.jpg') [90002-181]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.Prepared.query(Prepared.java:212)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:90)
+	at org.h2.command.Command.executeQuery(Command.java:197)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:80)
+	at builder.DBupdate.<init>(DBupdate.java:24)
+	at builder.BuilderFrame$3.actionPerformed(BuilderFrame.java:137)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+06-28 13:45:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Ошибка преобразования данных при конвертации "'dist' (BUILDER_DB: DISTANCE DOUBLE)"
+Data conversion error converting "'dist' (BUILDER_DB: DISTANCE DOUBLE)"; SQL statement:
+INSERT INTO builder_db (`name`,`radius`, `distance`, `orb_speed`, `rot_speed`, `tilt`, `texture`) VALUES ('enter here','120','dist','orb','rot','speed','1uEZGtzquto.jpg') -- ('enter here', '120', 'dist', 'orb', 'rot', 'speed', '1uEZGtzquto.jpg') [22018-181]
+2016-06-28 13:48:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Столбец "not null" не найден
+Column "not null" not found; SQL statement:
+update builder_db set id = "not null" [42122-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.command.dml.Update.prepare(Update.java:192)
+	at org.h2.command.Parser.prepareCommand(Parser.java:259)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1202)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+2016-06-28 13:51:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица содержит записи со значением NULL в поле "ID"
+Column "ID" contains null values; SQL statement:
+alter table builder_db alter column id set not null [90081-192]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.ddl.AlterTableAlterColumn.checkNoNullValues(AlterTableAlterColumn.java:515)
+	at org.h2.command.ddl.AlterTableAlterColumn.update(AlterTableAlterColumn.java:118)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:98)
+	at org.h2.command.Command.executeUpdate(Command.java:258)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:184)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Unknown Source)
+2016-06-28 13:53:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "UPDATE  BUILDER_DB SET ID='Hi' WHEBUILDER_DB[*] RE ID=1 "
+Syntax error in SQL statement "UPDATE  BUILDER_DB SET ID='Hi' WHEBUILDER_DB[*] RE ID=1 "; SQL statement:
+UPDATE  BUILDER_DB SET id='Hi' WHEBUILDER_DB RE ID=1 [42000-192]
+2016-06-28 13:56:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "DELETEUSER[*] APPLICATION PASSWORD 'abc' "; ожидалось "DELETE, DROP, DECLARE, DEALLOCATE, {"
+Syntax error in SQL statement "DELETEUSER[*] APPLICATION PASSWORD 'abc' "; expected "DELETE, DROP, DECLARE, DEALLOCATE, {"; SQL statement:
+deleteUSER application PASSWORD 'abc' [42001-192]
+2016-06-28 13:56:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "USER" не найдена
+Table "USER" not found; SQL statement:
+delete USER application PASSWORD 'abc' [42102-192]
+2016-06-28 13:57:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Таблица "USER" не найдена
+Table "USER" not found; SQL statement:
+delete USER application PASSWORD 'abc' [42102-192]

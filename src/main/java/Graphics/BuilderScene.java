@@ -4,29 +4,26 @@ package Graphics;
  * Created by symph on 31.05.2017.
  */
 
-import static java.nio.file.FileSystems.getDefault;
-
 import GUI.BuilderWindow;
 import GUI.onScreen;
-import com.jogamp.opengl.util.texture.*;
-import com.sun.prism.impl.BufferUtil;
 import com.jogamp.opengl.*;
-import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
-import java.nio.*;
-import java.nio.file.*;
 import com.jogamp.opengl.awt.GLCanvas;
 import com.jogamp.opengl.glu.GLU;
 import com.jogamp.opengl.math.Ray;
 import com.jogamp.opengl.math.geom.AABBox;
-import com.jogamp.opengl.util.gl2.GLUT;
 import com.jogamp.opengl.util.FPSAnimator;
-import com.jogamp.opengl.util.awt.TextRenderer;
-import javax.swing.*;
+import com.jogamp.opengl.util.gl2.GLUT;
+import com.jogamp.opengl.util.texture.Texture;
+import com.jogamp.opengl.util.texture.TextureIO;
 
-import com.jogamp.opengl.glu.*;
-import com.jogamp.opengl.util.*;
+import java.awt.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.file.FileSystem;
+import java.nio.file.Path;
+
+import static java.nio.file.FileSystems.getDefault;
 
 public class BuilderScene extends GLCanvas implements GLEventListener{
     private static final long serialVersionUID = 1L;
